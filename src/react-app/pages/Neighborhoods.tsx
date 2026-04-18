@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 import { Helmet } from 'react-helmet-async';
 import Header from '@/react-app/components/Header';
 import Footer from '@/react-app/components/Footer';
-import { GraduationCap, Clock, Home, ArrowRight, TrendingUp } from 'lucide-react';
+import { GraduationCap, Clock, Home, TrendingUp } from 'lucide-react';
 
 import { neighborhoods } from '@/react-app/data/neighborhoods';
 import type { Neighborhood } from '@/react-app/data/neighborhoods';
@@ -46,8 +46,8 @@ function HeroSection() {
           Explore Pittsburgh's<br />Best Neighborhoods
         </h1>
         <p className="text-lg text-muted-foreground max-w-2xl">
-          From suburban family communities to urban walkable villages, Pittsburgh offers 
-          diverse neighborhoods to match every lifestyle. Here's your guide to the area's most 
+          From suburban family communities to urban walkable villages, Pittsburgh offers
+          diverse neighborhoods to match every lifestyle. Here's your guide to the area's most
           desirable communities.
         </p>
       </div>
@@ -61,9 +61,9 @@ function NeighborhoodGrid({ sectionRefs }: { sectionRefs: React.MutableRefObject
       <div className="container-narrow">
         <div className="space-y-16">
           {neighborhoods.map((neighborhood, index) => (
-            <NeighborhoodCard 
-              key={neighborhood.id} 
-              neighborhood={neighborhood} 
+            <NeighborhoodCard
+              key={neighborhood.id}
+              neighborhood={neighborhood}
               reverse={index % 2 === 1}
               innerRef={(el) => (sectionRefs.current[neighborhood.id] = el)}
             />
@@ -74,18 +74,18 @@ function NeighborhoodGrid({ sectionRefs }: { sectionRefs: React.MutableRefObject
   );
 }
 
-function NeighborhoodCard({ 
-  neighborhood, 
-  reverse, 
-  innerRef 
-}: { 
-  neighborhood: Neighborhood; 
+function NeighborhoodCard({
+  neighborhood,
+  reverse,
+  innerRef
+}: {
+  neighborhood: Neighborhood;
   reverse: boolean;
   innerRef: (el: HTMLDivElement | null) => void;
 }) {
   return (
-    <div 
-      id={neighborhood.id} 
+    <div
+      id={neighborhood.id}
       ref={innerRef}
       className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${reverse ? 'lg:flex-row-reverse' : ''}`}
     >
@@ -98,12 +98,12 @@ function NeighborhoodCard({
           />
         </div>
       </div>
-      
+
       <div className={reverse ? 'lg:order-1' : ''}>
         <p className="text-sm uppercase tracking-widest text-champagne mb-2">{neighborhood.tagline}</p>
         <h2 className="text-display text-4xl mb-4">{neighborhood.name}</h2>
         <p className="text-muted-foreground mb-6 leading-relaxed whitespace-pre-line">{neighborhood.description}</p>
-        
+
         <div className="grid grid-cols-2 gap-4 mb-6">
           <div className="flex items-start gap-3">
             <Home size={18} className="text-champagne flex-shrink-0 mt-1" />
@@ -134,7 +134,7 @@ function NeighborhoodCard({
             </div>
           </div>
         </div>
-        
+
         <div className="flex flex-wrap gap-2 mb-6">
           {neighborhood.tags.map((tag) => (
             <span key={tag} className="px-3 py-1 bg-secondary text-[11px] uppercase tracking-wider font-medium">
@@ -155,8 +155,8 @@ function CTASection() {
           Not Sure Which Neighborhood<br />is Right for You?
         </h2>
         <p className="text-lg text-white/70 max-w-2xl mx-auto mb-10">
-          As someone who relocated to Pittsburgh myself, I understand the challenge of finding 
-          the right community. Let's talk about your priorities and I'll help you find the 
+          As someone who relocated to Pittsburgh myself, I understand the challenge of finding
+          the right community. Let's talk about your priorities and I'll help you find the
           perfect fit.
         </p>
         <Link

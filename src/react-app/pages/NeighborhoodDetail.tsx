@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import Header from '@/react-app/components/Header';
 import Footer from '@/react-app/components/Footer';
 import { neighborhoods } from '@/react-app/data/neighborhoods';
-import { GraduationCap, Clock, Home, ArrowLeft, TrendingUp, MapPin } from 'lucide-react';
+import { GraduationCap, Clock, Home, ArrowLeft, TrendingUp, MapPin, ArrowRight } from 'lucide-react';
 
 export default function NeighborhoodDetailPage() {
   const { id } = useParams<{ id: string }>();
@@ -38,9 +38,9 @@ export default function NeighborhoodDetailPage() {
         {/* Hero Section */}
         <section className="relative h-[60vh] min-h-[400px] flex items-center">
           <div className="absolute inset-0 z-0">
-            <img 
-              src={neighborhood.image} 
-              alt={neighborhood.name} 
+            <img
+              src={neighborhood.image}
+              alt={neighborhood.name}
               className="w-full h-full object-cover grayscale"
             />
             <div className="absolute inset-0 bg-black/60" />
@@ -64,7 +64,7 @@ export default function NeighborhoodDetailPage() {
                 <p className="text-lg text-muted-foreground leading-relaxed mb-8">
                   {neighborhood.description}
                 </p>
-                
+
                 <h3 className="text-xl font-medium mb-6">Area Highlights</h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-12">
                   {neighborhood.highlights.map((highlight) => (
@@ -75,8 +75,8 @@ export default function NeighborhoodDetailPage() {
                   ))}
                 </div>
 
-                <Link 
-                  to="/listings" 
+                <Link
+                  to="/listings"
                   className="btn-primary inline-flex items-center gap-2"
                 >
                   View Listings in This Area
