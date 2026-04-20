@@ -133,10 +133,6 @@ function FeaturedListingsSection() {
           ))}
         </div>
         
-        <p className="text-sm text-muted-foreground italic text-center">
-          Past transactions shown for reference. Not currently listed for sale.
-        </p>
-
         <div className="mt-12 md:hidden">
           <Link to="/listings" className="flex items-center justify-center gap-2 btn-outline w-full">
             View All Transactions <ArrowRight size={16} />
