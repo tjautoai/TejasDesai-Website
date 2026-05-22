@@ -691,7 +691,7 @@ function DownloadModal({ onClose }: { onClose: () => void }) {
               <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
             </div>
             <h3 className="text-xl font-medium mb-2">Check your inbox!</h3>
-            <p className="text-muted-foreground">Your Buyer's Presentation is on its way.</p>
+            <p className="text-muted-foreground">Your Buyer's Presentation is on its way. If you don't see it within a few minutes, please check your spam or junk folder.</p>
           </div>
         ) : (
           <>
