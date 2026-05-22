@@ -658,7 +658,7 @@ function DownloadModal({ onClose }: { onClose: () => void }) {
     };
 
     emailjs.send(
-      'service_w9ozuuk',
+      'service_j9lm3vi',
       'template_97muq2y',
       templateParams,
       'jAhBde0mfnv6bwUOH'
