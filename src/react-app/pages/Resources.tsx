@@ -111,7 +111,6 @@ const sellerFaqs = [
 export default function ResourcesPage() {
   const [activeCalculator, setActiveCalculator] = useState<string | null>(null);
   const [isDownloadModalOpen, setIsDownloadModalOpen] = useState(false);
-  const [downloadTool, setDownloadTool] = useState<string | null>(null);
   const mortgageRef = useRef<HTMLDivElement>(null);
   const affordabilityRef = useRef<HTMLDivElement>(null);
   const rentVsBuyRef = useRef<HTMLDivElement>(null);
@@ -148,8 +147,7 @@ export default function ResourcesPage() {
           mortgageRef={mortgageRef}
           affordabilityRef={affordabilityRef}
           rentVsBuyRef={rentVsBuyRef}
-          openDownloadModal={(toolId) => {
-            setDownloadTool(toolId);
+          openDownloadModal={() => {
             setIsDownloadModalOpen(true);
           }}
         />
@@ -193,7 +191,7 @@ function ToolsSection({
   mortgageRef: React.RefObject<HTMLDivElement | null>;
   affordabilityRef: React.RefObject<HTMLDivElement | null>;
   rentVsBuyRef: React.RefObject<HTMLDivElement | null>;
-  openDownloadModal: (toolId: string) => void;
+  openDownloadModal: () => void;
 }) {
   return (
     <section id="mortgage-calculator" className="py-24">
@@ -221,7 +219,7 @@ function ToolsSection({
                   </button>
                 ) : (tool as any).isDownload ? (
                   <button
-                    onClick={() => openDownloadModal((tool as any).isDownload)}
+                    onClick={() => openDownloadModal()}
                     className="inline-flex items-center gap-2 text-sm uppercase tracking-widest hover:text-champagne transition-colors"
                   >
                     Download Free Guide <ArrowRight size={14} />
