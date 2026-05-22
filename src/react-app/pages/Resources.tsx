@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet-async';
 import Header from '@/react-app/components/Header';
 import Footer from '@/react-app/components/Footer';
 import { Calculator, FileText, ChevronDown, ArrowRight, HelpCircle, Lock, X } from 'lucide-react';
-import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 
 const tools = [
   {
@@ -155,7 +155,6 @@ export default function ResourcesPage() {
         />
         {isDownloadModalOpen && (
           <DownloadModal 
-            toolId={downloadTool} 
             onClose={() => setIsDownloadModalOpen(false)} 
           />
         )}
@@ -644,7 +643,7 @@ function CTASection() {
   );
 }
 
-function DownloadModal({ toolId, onClose }: { toolId: string | null, onClose: () => void }) {
+function DownloadModal({ onClose }: { onClose: () => void }) {
   const [email, setEmail] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
