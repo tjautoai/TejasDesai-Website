@@ -420,6 +420,175 @@ Moving to Pittsburgh was one of the best decisions my family made. I'd love to h
 Let's connect!
     `,
   },
+  {
+    id: '6',
+    slug: 'what-does-a-buyers-agent-actually-do',
+    title: 'What Does a Buyer\'s Agent Actually Do?',
+    excerpt: 'The honest version of what a buyer\'s agent does, what the Buyer Agency Agreement actually means, and why it matters more than ever post-NAR settlement.',
+    category: 'Buyer Tips',
+    date: 'May 1, 2026',
+    readTime: '5 min read',
+    image: '/blog-buyers-agent.png',
+    content: `
+Before I got my license, I genuinely thought buyer's agents just unlocked doors and pointed at closets. That was pretty much my mental model. A lot of buyers still think that.
+
+Then the NAR settlement happened in 2024. Now there's more confusion than ever about who does what, who pays whom, and whether you need a buyer's agent at all. So here's my honest version. Not the polished brochure version.
+
+## The Work You Never See
+
+By the time you walk into a house, I've already done a chunk of work you had no idea was happening.
+
+Reviewing the disclosure documents so you don't waste a Saturday driving to a house with a drainage issue that's been documented for two years. Checking how long the property has actually been sitting vs. what the listing implies. Knowing that the school district boundary shown on Zillow is sometimes just wrong. This comes up more than you'd think in Cranberry Township and Wexford, where districts can split streets oddly.
+
+Then there's the offer side. When you find something you want, it's not just writing up numbers. It's thinking through: what's the seller's actual situation? Are there competing offers? Does going in at list price signal weakness here, or is it the right move? Which contingencies genuinely protect you vs. which ones might cost you the deal?
+
+I had a client last year who was ready to waive inspection because they really wanted the house. That's the moment where my job is to slow down and have a real talk, not just get the paperwork done.
+
+## The Agreement Nobody Tells You About Early Enough
+
+Post-NAR settlement, buyer's agents in Pennsylvania need a signed Buyer Agency Agreement before showing homes. This document covers what I'll do, how long we're working together, and how compensation works.
+
+And here's the thing I've learned: if you bring this up right before a showing, it feels like a surprise. Nobody likes surprises in real estate. So I talk about it early, before we schedule anything, before you fall in love with a kitchen.
+
+Most sellers in western Pennsylvania still offer buyer's agent compensation. Some don't. Either way, it's a conversation we have upfront. It's not a trap. It's just how things work now.
+
+## Does Everyone Need a Buyer's Agent?
+
+In most cases, yes. Especially here.
+
+The listing agent represents the seller. That's their job. If you call the listing number and say "I'll just deal directly with them," you're negotiating against someone whose entire role is to get the best outcome for the other side. That's not illegal, it's just not great for you.
+
+When I moved to Pittsburgh with my family, I didn't know the difference between Wexford and Cranberry Township. I didn't know which streets have flood history, where the school district lines actually fall, or which neighborhoods had ongoing HOA disputes that weren't showing up anywhere public. That took three years to figure out. It's what I bring to client conversations now.
+
+## What It Costs You
+
+Usually nothing out of pocket. In most transactions here, seller-paid compensation still covers the buyer's agent. We'll talk about it in our first conversation so there's no confusion later.
+
+## One Last Thing
+
+A good buyer's agent is reading the fine print while you're picturing where your couch goes. They're asking questions you don't know to ask yet. That gap matters, especially in a market that hasn't slowed down much.
+
+If you're thinking about buying in the Pittsburgh area, reach out. No pitch, no pressure. Just a real conversation about where you are and what makes sense for you.
+    `,
+  },
+  {
+    id: '7',
+    slug: 'top-5-mistakes-pittsburgh-home-buyers-make',
+    title: 'Top 5 Mistakes Pittsburgh Home Buyers Make (That Cost Them the Deal)',
+    excerpt: 'From skipping pre-approval to trusting the listing agent, here are the five mistakes I see buyers make most often in Pittsburgh\'s northern suburbs.',
+    category: 'Buyer Tips',
+    date: 'May 15, 2026',
+    readTime: '6 min read',
+    image: '/blog-buyer-mistakes.png',
+    content: `
+I've watched buyers lose homes they really wanted. Not because someone outbid them by a huge number. Sometimes it was a contingency that spooked the seller. Sometimes it was a pre-approval letter that wasn't what it needed to be. Sometimes it was just avoidable timing.
+
+Here are the five mistakes I see most often with buyers in Wexford, Cranberry Township, Sewickley, and the North Hills.
+
+## 1. Getting Pre-Qualified Instead of Pre-Approved
+
+These sound almost identical. They're not.
+
+Pre-qualification is a rough estimate. A lender looks at what you tell them about your income and spits out a number. No documents reviewed, no credit pull. It means almost nothing to a seller.
+
+Pre-approval is different. The lender has actually gone through your tax returns, pay stubs, bank statements, and run your credit. When your offer comes in with a real pre-approval letter, the seller knows you can close.
+
+In Cranberry Township especially, where well-priced homes still move quickly, showing up with just a pre-qual is like arriving to a job interview without your resume. You might still get a shot. You're already behind though.
+
+## 2. Falling in Love Before Running the Numbers
+
+This happens to smart people all the time.
+
+You walk into a house in Wexford. The kitchen is exactly what you wanted. The backyard is perfect. You're already mentally placing furniture. Then you find out property taxes are $9,200 a year, HOA is $380 a month, and the roof has maybe two years left on it.
+
+That monthly payment just got a lot more complicated.
+
+Property taxes in Allegheny and Butler counties can vary a surprising amount even between neighboring streets. HOA fees are all over the place. Before you let yourself get attached to any property, run the full number. Mortgage, taxes, HOA, insurance, and a rough mental note on any obvious deferred maintenance you spotted on the first walkthrough.
+
+Get attached after the math checks out.
+
+## 3. Skipping Inspection (Or Treating It Like a Formality)
+
+I understand the pressure. In a competitive situation, waiving inspection feels like the move that wins you the house. Sometimes it is. Usually it's not worth it, particularly in Pittsburgh.
+
+A lot of homes in the North Hills and Sewickley were built between the 1960s and 1980s. Knob and tube wiring is still out there. Older sewer lines. Basements that have been managing water in creative ways for decades. None of that shows up on the listing. All of it shows up on an inspection report.
+
+If you're worried about losing a house over the inspection contingency, there are ways to structure an offer that address the seller's concerns without giving up all your protection. That's worth talking through before you write the offer, not after you're already under contract.
+
+## 4. Making Financial Moves Mid-Transaction
+
+You're under contract. You're excited. You go finance a couch and dining set for the house you're about to own. Or you switch jobs because the timing felt right. Or you pay off a big chunk of debt thinking it'll help your credit score.
+
+Any of those can shift your debt-to-income ratio or credit profile enough to affect your loan approval. Lenders run a second credit check right before closing. If something has changed, you'll find out at the worst possible moment.
+
+Simple rule: from contract to keys, don't open new credit, don't make large purchases, don't change jobs, and don't move money around without telling your lender first. When in doubt, call your lender before you do anything financial. Anything.
+
+## 5. Assuming the Listing Agent Is Neutral
+
+The listing agent is usually friendly. They answer your questions. They seem helpful. It's easy to start treating them like a resource.
+
+They work for the seller. Every question you answer about your budget, your timeline, or how much you love the house is information that can be used in negotiation. That's not a knock on them. That's just how the job works.
+
+When buyers call the listing number directly to make an offer, they're negotiating without anyone in their corner. Your own agent isn't there to add complexity. They're there because their job is specifically to protect your side of the deal.
+
+## One Last Thing
+
+Most of these aren't about not knowing enough about real estate. They're about moving fast without the right context. All of them are avoidable.
+
+If you're planning to buy in Pittsburgh's northern suburbs this year, reach out before you're already in the middle of a transaction. That conversation costs nothing. These mistakes do.
+    `,
+  },
+  {
+    id: '8',
+    slug: 'summer-2026-pittsburgh-real-estate-market-update',
+    title: 'Summer 2026 Market Update: What\'s Happening in Pittsburgh\'s Northern Suburbs',
+    excerpt: 'Inventory, prices, interest rates, and what buyers and sellers in Wexford, Cranberry, Sewickley and the North Hills need to know heading into summer.',
+    category: 'Market Update',
+    date: 'June 1, 2026',
+    readTime: '5 min read',
+    image: '/blog-summer-market.png',
+    content: `
+Every few months I try to give an honest read on what's actually happening in the market. Not the national headlines. Not the doom or the irrational optimism you see on financial TV. Just what I'm seeing on the ground in Wexford, Cranberry Township, Sewickley, and the North Hills.
+
+## Inventory Is Still the Main Story
+
+There aren't enough homes for sale relative to buyers looking. This has been the dominant theme in Pittsburgh's northern suburbs for two years and it hasn't resolved.
+
+A few things are driving it. Homeowners who locked in 3% rates in 2020 and 2021 have little financial reason to sell and take on a new mortgage at today's rates. So they stay. New construction has picked up in Cranberry Township but not fast enough to close the gap. And Pittsburgh keeps attracting relocating families from higher cost metros, which holds demand steady even as affordability tightens elsewhere.
+
+The practical result for buyers: well-priced homes in good school districts still draw multiple offers. Not every home. But the ones priced right that show well don't sit long.
+
+## Prices Have Held
+
+We haven't seen the correction some analysts were calling for at the start of the year. Median sale prices in Cranberry Township and Wexford are running roughly 4-6% above this time last year. Sewickley has seen stronger appreciation specifically in the $500k-$800k range, which tracks with its historic housing stock and the walkable village dynamic.
+
+North Hills is worth watching right now. There's a wider spread of inventory across price points which is creating some real opportunity for buyers who have flexibility on the specific municipality.
+
+## On Rates
+
+Rates are still elevated compared to 2020-2021. That's just where we are. But people bought homes when rates were 8%, 10%, higher. The math on what your budget gets you is different today than three years ago, and I'd rather walk through that honestly upfront than have someone stretch into a payment that doesn't work.
+
+Also worth remembering: you can refinance when rates drop. You can't go back and buy the house you passed on.
+
+## If You're Thinking About Selling
+
+Conditions are still favorable. Low inventory means less competition for your listing and buyer demand in the northern suburbs hasn't dried up.
+
+That said, the days of putting any house on the market at any price and fielding 15 offers are behind us. Homes that are prepared well and priced correctly are still moving quickly. Homes that are overpriced are sitting for months, which creates its own problems. Pricing strategy matters more now than it did two years ago.
+
+## If You're Thinking About Buying
+
+Get your financing in order before you start seriously looking. When you find something you want, you need to be ready to move that day. Waiting to call a lender after you've found the house is how you lose it.
+
+Also, be realistic about the Cranberry and Wexford school district premium. It's real and it reflects genuine demand. If your budget is feeling stretched, parts of the North Hills and the Butler County corridor offer solid schools at lower price points. Worth a conversation if you haven't considered it.
+
+## Heading Into Summer
+
+Pittsburgh's market has always been steadier than the national narrative, which is part of why people keep moving here. I don't see dramatic shifts either way this summer.
+
+If you're planning to buy or sell in the next 90 days, the prep work takes longer than most people expect. Starting that conversation now means you're ready when the right opportunity shows up instead of scrambling to catch up.
+    `,
+  },
 ];
 
 export const categories = ['All', 'Market Update', 'Buyer Tips', 'Seller Tips', 'Pittsburgh Living', 'Relocation'];
