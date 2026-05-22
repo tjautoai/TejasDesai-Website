@@ -3,7 +3,8 @@ import { Link } from 'react-router';
 import { Helmet } from 'react-helmet-async';
 import Header from '@/react-app/components/Header';
 import Footer from '@/react-app/components/Footer';
-import { Calculator, FileText, ChevronDown, ArrowRight, HelpCircle, Lock } from 'lucide-react';
+import { Calculator, FileText, ChevronDown, ArrowRight, HelpCircle, Lock, X } from 'lucide-react';
+import emailjs from 'emailjs-com';
 
 const tools = [
   {
@@ -35,7 +36,8 @@ const tools = [
     description: 'Everything you need to know about buying a home in Pittsburgh.',
     icon: FileText,
     link: null,
-    available: false,
+    available: true,
+    isDownload: 'buyers-guide',
   },
   {
     title: "Pittsburgh Seller's Guide",
@@ -108,6 +110,8 @@ const sellerFaqs = [
 
 export default function ResourcesPage() {
   const [activeCalculator, setActiveCalculator] = useState<string | null>(null);
+  const [isDownloadModalOpen, setIsDownloadModalOpen] = useState(false);
+  const [downloadTool, setDownloadTool] = useState<string | null>(null);
   const mortgageRef = useRef<HTMLDivElement>(null);
   const affordabilityRef = useRef<HTMLDivElement>(null);
   const rentVsBuyRef = useRef<HTMLDivElement>(null);
@@ -144,7 +148,17 @@ export default function ResourcesPage() {
           mortgageRef={mortgageRef}
           affordabilityRef={affordabilityRef}
           rentVsBuyRef={rentVsBuyRef}
+          openDownloadModal={(toolId) => {
+            setDownloadTool(toolId);
+            setIsDownloadModalOpen(true);
+          }}
         />
+        {isDownloadModalOpen && (
+          <DownloadModal 
+            toolId={downloadTool} 
+            onClose={() => setIsDownloadModalOpen(false)} 
+          />
+        )}
         <FAQSection />
         <CTASection />
       </main>
@@ -172,13 +186,15 @@ function ToolsSection({
   setActiveCalculator,
   mortgageRef,
   affordabilityRef,
-  rentVsBuyRef
+  rentVsBuyRef,
+  openDownloadModal
 }: { 
   activeCalculator: string | null; 
   setActiveCalculator: (calc: string | null) => void;
   mortgageRef: React.RefObject<HTMLDivElement | null>;
   affordabilityRef: React.RefObject<HTMLDivElement | null>;
   rentVsBuyRef: React.RefObject<HTMLDivElement | null>;
+  openDownloadModal: (toolId: string) => void;
 }) {
   return (
     <section id="mortgage-calculator" className="py-24">
@@ -197,12 +213,19 @@ function ToolsSection({
                   <Link to={tool.link} className="inline-flex items-center gap-2 text-sm uppercase tracking-widest hover:text-champagne transition-colors">
                     Use Tool <ArrowRight size={14} />
                   </Link>
-                ) : tool.isCalculator ? (
+                ) : (tool as any).isCalculator ? (
                   <button
-                    onClick={() => setActiveCalculator(activeCalculator === tool.isCalculator ? null : tool.isCalculator!)}
+                    onClick={() => setActiveCalculator(activeCalculator === (tool as any).isCalculator ? null : (tool as any).isCalculator!)}
                     className="inline-flex items-center gap-2 text-sm uppercase tracking-widest hover:text-champagne transition-colors"
                   >
-                    {activeCalculator === tool.isCalculator ? 'Close' : 'Use Tool'} <ArrowRight size={14} />
+                    {activeCalculator === (tool as any).isCalculator ? 'Close' : 'Use Tool'} <ArrowRight size={14} />
+                  </button>
+                ) : (tool as any).isDownload ? (
+                  <button
+                    onClick={() => openDownloadModal((tool as any).isDownload)}
+                    className="inline-flex items-center gap-2 text-sm uppercase tracking-widest hover:text-champagne transition-colors"
+                  >
+                    Download Free Guide <ArrowRight size={14} />
                   </button>
                 ) : null
               ) : (
@@ -618,5 +641,88 @@ function CTASection() {
         </Link>
       </div>
     </section>
+  );
+}
+
+function DownloadModal({ toolId, onClose }: { toolId: string | null, onClose: () => void }) {
+  const [email, setEmail] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false);
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!email) return;
+
+    setIsSubmitting(true);
+
+    const templateParams = {
+      user_email: email,
+      download_link: 'https://www.tejasdesai.realtor/TD-Pittsburgh-Buyer-Presentation.pdf'
+    };
+
+    emailjs.send(
+      'service_w9ozuuk',
+      'template_97muq2y',
+      templateParams,
+      'jAhBde0mfnv6bwUOH'
+    ).then(() => {
+      setIsSubmitting(false);
+      setIsSuccess(true);
+      setTimeout(() => {
+        onClose();
+      }, 4000);
+    }).catch((err) => {
+      console.error('Email failed to send', err);
+      setIsSubmitting(false);
+      alert('There was an error sending the guide. Please try again.');
+    });
+  };
+
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4">
+      <div className="bg-white w-full max-w-md p-8 relative animate-in fade-in zoom-in-95 duration-200">
+        <button 
+          onClick={onClose}
+          className="absolute top-4 right-4 text-muted-foreground hover:text-black transition-colors"
+        >
+          <X size={20} />
+        </button>
+        
+        {isSuccess ? (
+          <div className="text-center py-8">
+            <div className="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
+            </div>
+            <h3 className="text-xl font-medium mb-2">Check your inbox!</h3>
+            <p className="text-muted-foreground">Your Buyer's Presentation is on its way.</p>
+          </div>
+        ) : (
+          <>
+            <h3 className="text-2xl font-medium mb-2">Download Free Guide</h3>
+            <p className="text-muted-foreground mb-6">Enter your email to receive the Pittsburgh Buyer's Guide directly in your inbox.</p>
+            
+            <form onSubmit={handleSubmit} className="space-y-4">
+              <div>
+                <input
+                  type="email"
+                  required
+                  placeholder="Enter your email address"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  className="w-full px-4 py-3 border border-black/20 bg-white focus:outline-none focus:border-black transition-colors"
+                />
+              </div>
+              <button
+                type="submit"
+                disabled={isSubmitting}
+                className="w-full bg-black text-white py-4 text-sm uppercase tracking-widest hover:bg-champagne hover:text-white transition-all disabled:opacity-50"
+              >
+                {isSubmitting ? 'Sending...' : 'Send Me the Guide'}
+              </button>
+            </form>
+          </>
+        )}
+      </div>
+    </div>
   );
 }
