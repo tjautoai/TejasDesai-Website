@@ -12,6 +12,57 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: '9',
+    slug: 'should-i-buy-now-or-wait-for-rates-to-drop',
+    title: "Should I Buy Now or Wait for Rates to Drop?",
+    excerpt: "Rates are at 6.55–6.59% and the Fed just held again. Here's the honest math on whether waiting actually saves you money in Pittsburgh's northern suburbs.",
+    category: "Buyer Tips",
+    date: "June 15, 2026",
+    readTime: "6 min read",
+    image: "/blog-post-9-buy-now-or-wait.png",
+    content: `
+Everybody's waiting for rates to drop. I hear it every week. "We'll buy when rates come down." "Once the Fed cuts, we'll make our move."
+
+Here's the thing though. The Fed just held rates again today at their June meeting. The 30-year fixed is at 6.55 to 6.59%. And nobody is projecting meaningful cuts before 2027. I'm not saying this to scare you. I'm saying it because a lot of buyers are sitting on the sidelines based on a timeline that probably isn't coming.
+
+Here's my honest take on the question.
+
+## The April window already closed
+
+Rates actually did drop this year. Between January and mid-April, the 30-year rate fell from above 6.9% all the way briefly below 6%. Buyers who locked in then got genuinely good terms. Since then, a hotter-than-expected inflation reading pushed rates back up and killed any near-term Fed cut expectations. That window is gone for now.
+
+## The market isn't waiting
+
+In Cranberry Township, homes are going pending in about 6 days right now. Values are up 4.5% year over year. Wexford is around 20 days. These are real seller's markets, and they've been that way for a while.
+
+If you're waiting for rates to improve before buying in Cranberry or Wexford, here's the math problem: you might save a little on your monthly payment in 12 months, but the house will likely cost more. Pennsylvania just ranked as the 10th hottest real estate market in the country for 2026. That demand isn't going away.
+
+## Not every market is the same
+
+Sewickley is sitting at about 55 days on market, with prices barely up 0.9% year over year. Mars is around 100 days. In those markets, you have real room to negotiate. Sellers are more flexible, you can ask for concessions, and you're not rushing into anything.
+
+So "should I wait?" genuinely depends on where you want to buy. There's no single right answer.
+
+## The actual payment math
+
+On a $450,000 home with 20% down at today's rate of 6.55%, your principal and interest comes out to about $2,274 a month. That's higher than the 2020-2021 norms but lower than the 2023 peak.
+
+If rates drop to 5.5% next year, that same payment is roughly $2,040. About $230 less per month. But if that home is now $475,000 because prices kept climbing, you've eaten most of those savings. That's before we talk about the extra year of rent you paid waiting.
+
+## One more thing worth knowing
+
+A lot of current homeowners are "rate-locked." They bought or refinanced at 3 to 4% and have zero desire to sell and take on a 6.5% mortgage. That's keeping resale inventory tight in the best neighborhoods, even as overall metro inventory creeps up. The homes that hit the market in Cranberry and Wexford get absorbed fast precisely because supply stays constrained.
+
+## What I tell my clients
+
+Buy when your life is ready, not when the market is perfect. The perfect market doesn't exist. What does exist is a home that fits your family, your commute, your budget, and a rate you can refinance when things eventually shift.
+
+*Marry the house. Date the rate.*
+
+If you want me to run the actual numbers for your situation, reach out at 412-608-3981 or through the contact page. No pitch, just math.
+    `,
+  },
+  {
     id: '5',
     slug: 'why-compass-number-one-brokerage',
     title: "Why I'm Proud to Be a Compass Agent — And What It Means for You",
