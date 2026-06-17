@@ -640,6 +640,6 @@ Pittsburgh's market has always been steadier than the national narrative, which 
 If you're planning to buy or sell in the next 90 days, the prep work takes longer than most people expect. Starting that conversation now means you're ready when the right opportunity shows up instead of scrambling to catch up.
     `,
   },
-];
+].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
 export const categories = ['All', 'Market Update', 'Buyer Tips', 'Seller Tips', 'Pittsburgh Living', 'Relocation'];
