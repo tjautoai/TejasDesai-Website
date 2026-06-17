@@ -259,7 +259,7 @@ function MortgageCalculator() {
     <div className="bg-secondary border border-black/10 p-2 mb-16 animate-in fade-in slide-in-from-top-4 duration-500">
       <div className="bg-white border border-black/10 overflow-hidden">
         <iframe
-          src="https://bit.ly/calculate-mortgage"
+          src="https://mortgage-calculator-self-phi-28.vercel.app"
           width="100%"
           height="600"
           frameBorder="0"
